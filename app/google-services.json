@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "719046209107",
+    "project_id": "xtravu-play",
+    "storage_bucket": "xtravu-play.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:719046209107:android:44f8d91fa6ba0becc520a6",
+        "android_client_info": {
+          "package_name": "com.mob.xtravuwatchdog"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnSju-y2_v8XWNKWqvY4xRG-4awrgUImI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,508 @@
+:root{
+
+}
+*
+
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+input{color: white;}
+.display_flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* width: 100%; */
+}
+.display_flex_col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* height: 100%; */
+}
+@font-face {
+    font-family: 'inter';
+    src: url('/static/inter-Regular.woff');
+}
+html{
+    font-family: 'inter';
+    font-size: 16px;
+    overflow-x: hidden;
+    
+}
+body{
+    background: #000;
+    color: white;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    
+}
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    padding: 10px;
+}
+.containers{
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.logindiv input{
+    background: #434343;border: 1px solid #636363;padding: 20px;border-radius: 10px;
+    font-size: clamp(20px,3vw,26px);
+    color: white;
+}
+.remotebar{
+    position: absolute;
+    top: 5%;
+    height: 7%;
+    width: 98%;
+    justify-content: flex-start
+}
+.fontBold{
+    font-weight: 600;
+}
+.font-300{
+    font-weight: 300;
+}
+.listdiv{
+    overflow-y: scroll;
+    height: 70%;
+    justify-content: flex-start;
+    width: 98%;
+
+}
+.list{
+    width: 100%;
+padding: 5px;
+border-radius: 10px;
+    margin: 20px 0;
+    width: 100%;
+border:3px solid transparent;
+
+}
+.list:hover{
+border:3px solid #0080E1;
+}
+
+.list .display_flex:nth-child(1) .display_flex_col{
+    align-items: flex-start;
+    width: 90%;
+}
+.list > .display_flex:nth-child(1){
+    width: 60%;
+}
+.list > .display_flex:nth-child(2){
+    width: 35%;
+    max-width: 300px;
+}
+.list.active{
+}
+.logoicon{
+    width: 100px;
+    height: 51px;
+}
+.bluebtn{
+    position: absolute;
+    bottom: 10px;
+}
+.w-100{
+    width: 98%;
+}
+.btn{
+    padding: 6px 8px ;
+    border-radius: 6px;
+    font-size: clamp(18px,3vw,26px);
+    color: white;
+    margin: 0 3px;
+    /* min-width: 97px; */
+}
+.popup{
+    position: absolute;
+    height:100vh;
+    top: 0;
+    left: 0;
+    width:100vw;
+    backdrop-filter: blur(5px);
+    justify-content: center;
+    display: none;
+
+}
+.layer{
+    position: absolute;
+    top: 0;
+    height:100%;
+    width:100%;
+    backdrop-filter: blur(5px);
+    justify-content: center;
+}
+.layer > .display_flex_col{
+    height: 42vh;
+    padding: 10px;
+    background: #151314;
+    border-radius:10px;
+    width: 100%;
+    max-width: 700px;
+    max-height:     320px;
+}
+
+.layer > .display_flex_col:nth-child(1) > .display_flex:nth-child(2){
+    height: 80%;
+    width: 100%;
+    align-items: flex-start;
+}
+.layer > .display_flex_col > .display_flex_col {
+    width: 99%;
+}
+.layer > .display_flex_col > .display_flex_col .display_flex_col{
+    align-items: flex-start;
+    width: 100%;
+}
+.layer > .display_flex_col > .display_flex .display_flex_col:nth-child(1){
+    align-items: flex-start;
+    /* width: 44%; */
+}
+.layer > .display_flex_col > .display_flex .display_flex_col:nth-child(2){
+    align-items: flex-start;
+    /* width: 55%; */
+}
+.layer > .display_flex_col > .display_flex .display_flex_col input{
+    align-items: flex-start;
+    width: 98%;
+}
+.layer > .display_flex_col > .display_flex_col .display_flex_col .display_flex{
+    width: 100%;
+    margin: 10px 0;
+}
+.layer > .display_flex_col > .display_flex_col .display_flex_col .display_flex button{
+   width: clamp(40px,36%,204px);
+}
+.layer > .display_flex_col > .display_flex_col .display_flex_col .display_flex:nth-child(5){
+    width: 100%;
+}
+.layer > .display_flex_col > .display_flex .display_flex_col .display_flex input{
+    align-items: flex-start;
+    width: 59%;
+}
+/* .layer > .display_flex_col > .display_flex .display_flex_col:nth-child(2){
+    align-items: flex-end;
+} */
+.layer > .display_flex_col > .display_flex .display_flex_col > *{
+    margin: 20px 0 ;
+}
+h1{
+    font-size: clamp(18px , 2rem, 73px)
+}
+.file-input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  input[type="file"] {
+    display: none;
+  }
+  .custom-file-upload {
+    background-color: #002B4B; /* Dark blue background */
+    color: white;
+    padding: 10px 30px;
+    font-size: clamp(24px,3vw,34px);
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .preview-container {
+    display: none;
+    margin-top: 20px;
+  }
+  .preview-container img,
+  .preview-container video {
+    max-width: 100%;
+    max-height: 200px;
+  }
+
+.listclick:hover  {
+    border-radius: 5px;
+    background:#0080E1;
+}
+
+.display_flex_col {
+    display: flex;
+    flex-direction: column;
+    /* margin-left: 10px; */
+}
+.loginbtn{
+padding:10px;
+background:none;
+color:white;
+}
+.logo{
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.hover{
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.hover:hover{
+    background: #0080E1;
+}
+.logindiv{
+    height: 36vh;
+    width: clamp(400px,50%,600px);
+}
+h1{
+    font-size: clamp(18px , 2rem, 73px)
+}
+
+/* .btn{
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: clamp(18px,3vw,26px);
+    color: white;
+} */
+
+#back{
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+}
+.deleteall{
+    border: none;
+}
+.deleteicon{
+    height: 15px ;
+    width: 10px ;
+
+}
+.arrow:hover{
+    border-radius: 5px;
+    background:#0080E1;
+}
+.path{
+    width:90%;
+    overflow-x: auto;
+}
+.arrow{
+    height: 28px;
+    width:28px;
+}
+.iconImage{
+width:30px;
+height:30px;
+margin-right: 10px;
+}
+.rotateicon{
+    display: none;
+}
+.deleteplay:hover{
+    background-color: #ED8D8D !important;
+    border-radius: 5px;
+
+}
+.player-options {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+    .player-option {
+            display: flex;
+            align-items: center;
+        }
+
+        .player-option input[type="radio"]
+        {
+            display: none; /* Hide default radio buttons */
+        }
+
+        .player-option label {
+            font-size: 20px;
+            position: relative;
+            padding-left: 40px;
+            cursor: pointer;
+        }
+
+        /* Custom radio button */
+        .player-option label::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 25px;
+            height: 25px;
+            border: 2px solid white;
+            border-radius: 50%;
+            background-color: transparent;
+        }
+
+        /* Selected radio button */
+        .player-option input[type="radio"]:checked + label::before {
+            background-color: #0080E1;
+            border: 2px solid #0080E1;
+        }
+
+        .player-option input[type="radio"]:checked + label::after {
+            content: "";
+            position: absolute;
+            left: 9px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 10px;
+            height: 10px;
+            background-color: black;
+            border-radius: 50%;
+        }
+        /* Container for the switch */
+        .switch-container {
+            display: flex;
+            align-items: center;
+            gap: 10px; /* Adjust the spacing between the text and switch button */
+        }
+        .switch {
+          position: relative;
+          display: inline-block;
+          width: 60px;
+          height: 34px;
+        }
+
+        /* Hide the default checkbox */
+        .switch input {
+          opacity: 0;
+          width: 0;
+          height: 0;
+        }
+
+        /* The slider */
+        .slider {
+          position: absolute;
+          cursor: pointer;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: #ccc;
+          transition: .4s;
+          border-radius: 34px;
+        }
+
+        .slider:before {
+          position: absolute;
+          content: "";
+          height: 26px;
+          width: 26px;
+          left: 4px;
+          bottom: 4px;
+          background-color: white;
+          transition: .4s;
+          border-radius: 50%;
+        }
+
+        /* When the switch is checked */
+        input:checked + .slider {
+          background-color: #289EFA;
+        }
+
+        input:checked + .slider:before {
+          transform: translateX(26px);
+        }
+
+@media all and (min-width:400px) {
+    .list > .display_flex:nth-child(1){
+        width: 71%;
+    }
+    .list > .display_flex:nth-child(2){
+        width: 25%;
+    }
+}
+@media all and (min-width:600px) {
+    .list > .display_flex:nth-child(1){
+        width: 80%;
+    }
+    .list > .display_flex:nth-child(2){
+        width: 17%;
+    }
+    .player-options {
+        gap: 40px;
+    }
+}
+@media all and (min-width:768px) {
+    .list > .display_flex:nth-child(1){
+        width: 71%;
+    }
+    .list > .display_flex:nth-child(2){
+        width: 25%;
+    }
+    .rotateicon{
+        display: flex;
+    }
+    h1{
+        font-size: clamp(26px , 5rem, 73px)
+    }
+    #back{
+        width: 50px;
+    height: 50px;
+
+    }
+    .btn{
+    font-size: clamp(24px,3vw,33px);
+    padding: 10px 20px;
+    }
+    .deleteall{
+        border: 1px solid #ED8D8D;
+    }
+    .deleteicon{
+        height: 24px;
+        width: 19px;
+    }
+    .logoicon{
+        width: 195px;
+        height: 101px;
+    }
+    /* .path{
+        width: 90%;
+        overflow: scroll;
+    } */
+    .arrow{
+        height: 30px;
+        width:30px;
+    }
+    .iconImage{
+    width:60px;
+    height:60px;
+    }
+    .list .display_flex img{
+        margin-right: 10px ;
+    }
+    .list {
+        padding: 20px;
+    }
+    .layer > .display_flex_col{
+padding: 20px;
+height: 63vh;
+max-height: 395px;
+    }
+    .path{
+        width: 98%;
+    }
+}
+
+@media all and (min-width:1000px) {
+    .arrow{
+        height: 40px;
+        width:40px;
+    }
+}

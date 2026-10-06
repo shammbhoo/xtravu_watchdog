@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">xtravu Watchdog</string>
+    <!-- Dialog title permission -->
+    <string name="err_permission_denied">Permission Denied</string>
+
+    <!-- Dialog massage permission -->
+    <string name="file_permission">Please allow Read media permission for selecting image/video.</string>
+    <string name="err_write_storage_permission">Please allow <b>%1$s</b> permission for capture image/video.</string>
+    <string name="err_write_storage_setting"><b>%1$s</b> permission is not granted. Please allow it from setting.</string>
+
+    <!-- Permission result error  -->
+    <string name="err_permission_result">Permission not allowed</string>
+
+    <!-- popUp Activity strings-->
+    <string name="str_choose_option">Choose option</string>
+
+    <!-- Dialog strings -->
+    <string name="str_go_to_setting">Go To Setting</string>
+    <string name="str_cancel">Cancel</string>
+    <string name="str_ok">OK</string>
+
+    <!-- errors -->
+    <string name="err_document_pick_error">Document Pick Error</string>
+    <string name="err_media_pick_error">Media Pick Error</string>
+    <string name="err_config_null">%1$s data is set</string>
+    <string name="err_capture_error">%1$s capture Error </string>
+
+
+    <string name="empty_directory">Empty Directory</string>
+    <string name="storage_removed">Storage was removed or unmounted.</string>
+    <string name="choose_file">Select a file</string>
+    <string name="error_selecting_file">Error selecting File</string>
+    <string name="internal_storage">Internal storage</string>
+    <string name="block_confirmation">Confirmed</string>
+    <string name="block">block</string>
+
+    <string name="no_internet_connection">No internet connection.</string>
+    <string name="restart_no_internet">Please check internet connectivity and start again.</string>
+    <string name="enter_this_code_into_your_dashboard">Enter this code into your dashboard</string>
+    <string name="scan_this_qr_using_your_dashboard_camera">Scan this QR using your dashboard camera</string>
+
+    <string name="download_failed">Downloading Failed Please try again!</string>
+    <string name="accessibility_description">Xtravu Auto Launch Service helps keep your app running automatically after reboot
+    and ensures smooth playback of media on your device. It does not collect any personal data. Please enable it to allow auto-launch feature.
+    </string>
+</resources>

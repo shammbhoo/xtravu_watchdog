@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="testFixtures" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Techworks\project\xtravu\xtravu\serviceLibrary\src\testFixtures\assets"/></dataSet><dataSet config="testFixturesDebug" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Techworks\project\xtravu\xtravu\serviceLibrary\src\testFixturesDebug\assets"/></dataSet></merger>

@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "info.mqtt.android.service.test.serviceLibrary-mergeDebugAndroidTestResources-1:/values-v23/values-v23.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\shamb\\.gradle\\caches\\8.10.2\\transforms\\f0af4f6abd6153381ca9fa22060a2935\\transformed\\work-runtime-2.10.0\\res\\values-v23\\values-v23.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,121",
+                        "endColumns": "65,62",
+                        "endOffsets": "116,179"
+                    }
+                }
+            ]
+        }
+    ]
+}

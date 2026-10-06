@@ -1,0 +1,33 @@
+[
+  {
+    "index": 0,
+    "port": 0,
+    "thumbnailImage": "",
+    "resizeMode": "Fill",
+    "name": "Track 1d32",
+    "type": "video",
+    "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
+    "duration": 30
+  },
+  {
+    "index": 1,
+    "port": 0,
+    "type": "image",
+    "url": "https://farm4.staticflickr.com/3075/3168662394_7d7103de7d_z_d.jpg",
+    "duration": 20,
+    "thumbnailImage": "",
+    "resizeMode": "Fill",
+    "name": "Track 3"
+  },
+
+  {
+    "index": 2,
+    "port": 1,
+    "type": "hdmi",
+    "url": "https://farm4.staticflickr.com/3075/3168662394_7d7103de7d_z_d.jpg",
+    "duration": 40,
+    "thumbnailImage": "",
+    "resizeMode": "Fill",
+    "name": "track5.jpeg"
+  }
+]

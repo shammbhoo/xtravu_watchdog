@@ -1,0 +1,1 @@
+info.mqtt.android.service

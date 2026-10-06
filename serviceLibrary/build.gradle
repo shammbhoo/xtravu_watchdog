@@ -1,0 +1,56 @@
+plugins {
+    id("com.android.library")
+    id("org.jetbrains.kotlin.android") // Explicitly using Kotlin plugin ID
+    id("maven-publish")
+    id("org.jetbrains.kotlin.kapt") // Explicitly using kapt plugin ID
+}
+
+android {
+    namespace = "info.mqtt.android.service" // Use assignment instead of property syntax
+    testNamespace = "info.mqtt.android.service.test"
+    compileSdk = 35
+
+    defaultConfig {
+        minSdk = 24
+        targetSdk = 35
+        versionCode = 1
+        versionName = "1.0"
+
+        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    testFixtures {
+        enable = true
+    }
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8 // Or JavaVersion.VERSION_11
+        targetCompatibility = JavaVersion.VERSION_1_8 // Or JavaVersion.VERSION_11
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8" // Align with Java compatibility
+    }
+}
+
+dependencies {
+    api(libs.org.eclipse.paho.client.mqttv3)
+    implementation(libs.androidx.legacy.support.v4)
+    implementation(libs.androidx.core.ktx)
+    implementation(libs.kotlinx.coroutines.core)
+    implementation(libs.kotlinx.coroutines.android)
+
+    implementation(libs.kotlin.stdlib.jdk8) // Or libs.kotlin.stdlib.jdk11
+    implementation(libs.androidx.work.runtime.ktx)
+    implementation(libs.timber)
+
+    implementation(libs.androidx.room.runtime)
+    // Remove annotationProcessor - use kapt instead
+    implementation(libs.androidx.room.ktx)
+    kapt(libs.androidx.room.compiler)
+
+    androidTestImplementation(libs.androidx.junit.ktx)
+    androidTestUtil(libs.androidx.test.services)
+    androidTestImplementation(libs.androidx.espresso.core)
+    androidTestImplementation(libs.androidx.rules)
+}

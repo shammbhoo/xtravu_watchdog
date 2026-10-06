@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="red">#8B0000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="setting_bg_color">#1E1E1E</color>
+    <color name="setting_border_color">#575757</color>
+    <color name="gray">#B5B5B5</color>
+    <color name="high_light_color">#808080</color>
+    <color name="white_color_2">#D9D9D9</color>
+    <color name="login_dialog_bg_color">#151314</color>
+    <color name="white_08">#30FFFFFF</color>
+    <color name="hover_color">#92C6FF</color>
+    <color name="edit_button_bg_color">#434343</color>
+
+    <color name="appColor">#ED4B97</color>
+
+    <color name="blue">#0080E1</color>
+    <color name="transparent">#00000000</color>
+    <color name="open_setting_colorFocused">#289EFA</color>
+    <color name="open_setting_colorPressed">#289EFA</color>
+    <color name="open_setting_default">#B5B5B5</color>
+
+    <color name="row_item_colorFocused">#575757</color> <!-- Yellow for focused -->
+    <color name="row_item_colorPressed">#808080</color> <!-- Red for pressed -->
+
+    <color name="blue_btn_colorFocused">#aed6f1</color> <!-- Yellow for focused -->
+    <color name="blue_btn_colorPressed">#85c1e9</color> <!-- Red for pressed -->
+
+
+    <item name="gnfrBlueColor" type="color">#2A3748</item>
+    <item name="semiTransparentGnfrBlueColor" type="color">#602A3748</item>
+    <integer-array name="androidcolors">
+        <item>@color/gnfrBlueColor</item>
+        <item>@color/semiTransparentGnfrBlueColor</item>
+    </integer-array>
+</resources>
